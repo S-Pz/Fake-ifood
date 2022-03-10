@@ -1,0 +1,36 @@
+body{
+    margin: 20px 20px;
+}
+.cabecalho1{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho1 .logo img{
+    width: 50px;
+    height: 35px;
+}
+.lista_cabecalho1{
+    display: flex; 
+    justify-content: space-between;
+    gap: 25px;
+}
+.lupa{
+    display: flex; 
+    justify-content: space-between;
+}
+.lupa img{
+    width: 40px;
+    height: 40px
+}
+.config_cliente{
+    display: flex; 
+    justify-content: space-between;
+}
+.config_cliente .avatar img{
+    width: 40px;
+    height: 40px
+}
+.config_cliente .bag img{
+    width: 40px;
+    height: 40px
+}
