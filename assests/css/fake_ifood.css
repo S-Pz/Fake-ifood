@@ -14,6 +14,10 @@ body{
     justify-content: space-between;
     gap: 25px;
 }
+.lista_cabecalho1 .a:hover{
+    text-decoration: none; /* Opção para remover o sublinhado deixado pelo href*/
+    
+}
 .lupa{
     display: flex; 
     justify-content: space-between;
