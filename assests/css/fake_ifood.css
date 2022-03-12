@@ -1,6 +1,15 @@
 body{
     margin: 20px 20px;
+    font-family: Helvetica
 }
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 30px 50px;
+}   
 .cabecalho1{
     display: flex;
     justify-content: space-between;
@@ -13,10 +22,15 @@ body{
     display: flex; 
     justify-content: space-between;
     gap: 25px;
+    font-weight: 500;
 }
-.lista_cabecalho1 .a:hover{
+.lista_cabecalho1 a{/* Estiliza a tag a dentro da class cabecalho1*/
     text-decoration: none; /* Opção para remover o sublinhado deixado pelo href*/
-    
+    background-color: #fff;
+    color: black;
+}
+.lista_cabecalho1 a:hover{
+    color:#EA1D2C
 }
 .lupa{
     display: flex; 
@@ -37,4 +51,21 @@ body{
 .config_cliente .bag img{
     width: 40px;
     height: 40px
+}
+.cabecalho2{
+    display: flex;
+    justify-content: space-between;
+}
+.lista_cabecalho2{
+    display: flex; 
+    justify-content: space-between;
+    gap: 25px;
+}
+.lista_cabecalho2 a{
+    text-decoration: none; /* Opção para remover o sublinhado deixado pelo href*/
+    background-color: #fff;
+    color: black;
+}
+.lista_cabecalho2 a:hover{
+    color:#EA1D2C
 }
