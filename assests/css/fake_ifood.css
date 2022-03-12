@@ -13,44 +13,48 @@ header{
 .cabecalho1{
     display: flex;
     justify-content: space-between;
+    background-color: aquamarine;
+    align-items: center;
+}
+.cabecalho1 .logo{
+    padding-left: 10px;
 }
 .cabecalho1 .logo img{
     width: 50px;
     height: 35px;
 }
 .lista_cabecalho1{
+    padding-top: 2px;
+    font-size: 18px;
     display: flex; 
     justify-content: space-between;
     gap: 25px;
-    font-weight: 500;
 }
 .lista_cabecalho1 a{/* Estiliza a tag a dentro da class cabecalho1*/
     text-decoration: none; /* Opção para remover o sublinhado deixado pelo href*/
     background-color: #fff;
-    color: black;
+    color: #000;
 }
+/* Continuar editando a parte do cabeçalho do site para
+poder ficar o mais próximo do site original.*/
+/*
+Editei a parte do cabeçalho editando as class e centralizando tudo
+falta ajustar a logo para ficar alinhada e ajustada.
+*/
 .lista_cabecalho1 a:hover{
-    color:#EA1D2C
-}
-.lupa{
-    display: flex; 
-    justify-content: space-between;
-}
-.lupa img{
-    width: 40px;
-    height: 40px
+    color:#EA1D2C;
 }
 .config_cliente{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.config_cliente .avatar img{
-    width: 40px;
-    height: 40px
+.config_cliente .lupa{
+    padding-right: 300px;
 }
-.config_cliente .bag img{
-    width: 40px;
-    height: 40px
+.config_cliente .lupa img{
+    width: 25px;
+    height: 25px;
 }
 .cabecalho2{
     display: flex;
