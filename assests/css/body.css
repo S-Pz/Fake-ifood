@@ -1,0 +1,145 @@
+body{
+    margin: 15px 20px;
+    color: #717171;
+    font-family: Helvetica;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 30px 50px;
+}
+
+main{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: #717171;
+}
+
+a:hover{
+    color: red;
+}
+
+.cabecalho1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cabecalho1 .figure_cabecalho1 img{
+    width: 50px;
+    height: 25px;
+}
+
+.cabecalho1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-left: -150px;
+}
+
+.endereco {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px
+}
+
+.cabecalho2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho2 button {
+    cursor: pointer;
+    border-radius: 16px;
+    border: 1px solid #dcdcdc;
+    height: 32px;
+    width: 150px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px 5px;
+    background: #fff;
+    color: #717171;
+}
+
+.cabecalho2 button:hover {
+    background: #f8f8f8;
+}
+
+.lista_opcoes{
+    margin-top: 150px;
+}
+
+.lista_opcoes ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista_opcoes ul li{
+    text-align: center;
+    cursor: pointer;
+}
+
+.lista_opcoes ul li p{
+    font-size: 15px;
+}
+
+.lista_opcoes ul li img{
+    height: 70px;
+    width: 90px;
+}
+
+.lista_opcoes ul li img:hover{
+    scale: 105%;
+}
+
+.banners ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banners ul li img{
+    height: 500px;
+    width: 1000px;
+    padding-right: 10px;
+}
+
+.banners{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ultimas_lojas h2{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+
+.ultimas_lojas ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+
+.ultimas_lojas ul img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+footer{
+    border: 1px solid #717171;
+    margin: 50px 50px;
+}

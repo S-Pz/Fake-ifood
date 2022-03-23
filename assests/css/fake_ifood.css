@@ -69,6 +69,7 @@ falta ajustar a logo para ficar alinhada e ajustada.
 }
 .cabecalho2 .lista_cabecalho2 button{
     margin-left: 10px;
+    cursor: pointer;
     background-color: #fff;
     color: #000;
     border-radius: 20px;
@@ -83,19 +84,39 @@ falta ajustar a logo para ficar alinhada e ajustada.
     color:#EA1D2C
 }
 .serviços{
-    display: flex; 
     margin-top: 180px;
 }
-.serviços .listas_serviços{
-    display: flex; 
-    background-color: #bbb;
+.serviços ul{
+    display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
-.listas_serviços p{
-    padding-left: 10px;
+.serviços ul li{
+    text-align: center;
+    cursor: pointer;
 }
-.listas_serviços img{
-    width: 110px;
-    opacity: 100;
+.serviços ul li p{
+    font-size: 15px;
+}
+.serviços ul li img{
+    width: 90px;
+    height: 70px;
+}
+.serviços ul li img:hover{
+    scale:100%;
+}
+.banners{
+    margin-top: 25px;
+}
+.banners ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banners ul li{
+    padding-right: 10px;
+}
+.banners ul li img{
+    height: 500px;
+    width: 1000px;
 }
