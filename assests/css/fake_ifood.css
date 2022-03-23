@@ -13,7 +13,6 @@ header{
 .cabecalho1{
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
     align-items: center;
 }
 .cabecalho1 .logo{
@@ -64,12 +63,39 @@ falta ajustar a logo para ficar alinhada e ajustada.
     display: flex; 
     justify-content: space-between;
     gap: 25px;
+    background-color: #EA1D2C;
+    margin-left: 60px;
+    margin-top: 25px;
 }
-.lista_cabecalho2 a{
-    text-decoration: none; /* Opção para remover o sublinhado deixado pelo href*/
+.cabecalho2 .lista_cabecalho2 button{
+    margin-left: 10px;
     background-color: #fff;
-    color: black;
+    color: #000;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 8px;
+    display: inline-flex;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgb(192, 189, 189);
 }
-.lista_cabecalho2 a:hover{
+.lista_cabecalho2 button:hover{
     color:#EA1D2C
+}
+.serviços{
+    display: flex; 
+    margin-top: 180px;
+}
+.serviços .listas_serviços{
+    display: flex; 
+    background-color: #bbb;
+    justify-content: space-between;
+    
+}
+.listas_serviços p{
+    padding-left: 10px;
+}
+.listas_serviços img{
+    width: 110px;
+    opacity: 100;
 }
