@@ -121,5 +121,23 @@ falta ajustar a logo para ficar alinhada e ajustada.
     width: 1000px;
 }
 .ultimas_lojas h1{
-
+    margin: 15px 0px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.ultimas_lojas ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    width: 700px;
+}
+.ultimas_lojas ul li{
+    align-items: center;
+}
+.ultimas_lojas ul li img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
 }
