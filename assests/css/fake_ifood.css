@@ -9,7 +9,11 @@ header{
     top: 0px;
     left: 0px;
     padding: 30px 50px;
-}   
+}  
+footer{
+    border: 1px solid #717171;
+    margin: 50px 50px;
+} 
 .cabecalho1{
     display: flex;
     justify-content: space-between;
@@ -19,8 +23,8 @@ header{
     padding-left: 10px;
 }
 .cabecalho1 .logo img{
-    width: 50px;
-    height: 35px;
+    width: 60px;
+    height: 50px;
 }
 .lista_cabecalho1{
     padding-top: 2px;
@@ -55,6 +59,11 @@ falta ajustar a logo para ficar alinhada e ajustada.
     width: 25px;
     height: 25px;
 }
+.config_cliente img{
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+}
 .cabecalho2{
     display: flex;
     justify-content: space-between;
@@ -63,22 +72,23 @@ falta ajustar a logo para ficar alinhada e ajustada.
     display: flex; 
     justify-content: space-between;
     gap: 25px;
-    background-color: #EA1D2C;
     margin-left: 60px;
     margin-top: 25px;
 }
-.cabecalho2 .lista_cabecalho2 button{
-    margin-left: 10px;
+.cabecalho2 button{
+    margin-top: 15px;
     cursor: pointer;
-    background-color: #fff;
+    background: #fff;
     color: #000;
-    border-radius: 20px;
+    border-radius: 16px;
     font-size: 15px;
-    padding: 8px;
-    display: inline-flex;
-    border-width: 0.5px;
+    padding: 5px 5px;
+    height: 32px;
+    width: 150px;
+    border-width: 1px;
     border-style: solid;
-    border-color: rgb(192, 189, 189);
+    border-color: #dcdcdc;
+    text-align: center;
 }
 .lista_cabecalho2 button:hover{
     color:#EA1D2C
@@ -127,17 +137,23 @@ falta ajustar a logo para ficar alinhada e ajustada.
     font-weight: bold;
 }
 .ultimas_lojas ul{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
+    align-items: top;
     width: 700px;
 }
 .ultimas_lojas ul li{
-    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 .ultimas_lojas ul li img{
     height: 100px;
     width: 100px;
     border-radius: 100px;
+    margin-right: 15px;
+    margin-left: 25px;
+}
+.ultimas_lojas h3{
+    color:#000;
+    font-size: 15px;;
 }
