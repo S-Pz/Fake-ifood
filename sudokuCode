@@ -1,0 +1,135 @@
+void loadGame(int jogo[9][9], int mascara[9][9], int jogoResolvido[9][9]){
+
+    FILE *arq;
+    arq = fopen("savedGame.txt","r");
+
+    char c;
+
+    //Lê o jogo salvo
+    for(int i = 0; i < 9; i++){
+        for(int j = 0; j < 9; j++){
+
+            fscanf(arq,"%c", &c);
+
+            if(c == '.'){
+                jogo[i][j] = 0;
+
+            }else{
+                jogo[i][j] = atoi(&c);
+            }
+        }
+        fscanf(arq,"%c", &c);
+    }
+    
+    //Lê o '\n'
+    fscanf(arq,"%c", &c);
+
+    //Lê a máscara
+    for(int i = 0; i < 9; i++){
+        for(int j = 0; j<9; j++){
+
+            fscanf(arq, "%c",&c);
+
+            if(c == '.'){
+                mascara[i][j] = 0;
+            }else{
+                mascara[i][j] = atoi(&c);
+            }
+        }
+        fscanf(arq, "%c", &c);
+    }
+
+    //Lê o '\n'
+    fscanf(arq,"%c", &c);
+
+    //Lê o jogo resolvido
+    for(int i = 0; i < 9; i++){
+        for(int j = 0; j < 9; j++){
+            
+            fscanf(arq,"%c", &c);
+            jogoResolvido[i][j] = atoi(&c);
+        }
+        fscanf(arq,"%c", &c);
+    }
+    fclose(arq);
+}
+
+int main(){
+
+    FILE *table;
+    table = fopen("table2.txt", "r");
+    
+    int jogo[9][9];
+    int jogoResolvido[9][9];
+    int mascara[9][9];
+
+    int opcaoMenuInicial = menu();
+    int opcaoMenuJogo;
+    
+    switch (opcaoMenuInicial){
+
+        case 1: // Carregar jogo salvo
+
+            loadGame(jogo, mascara, jogoResolvido);
+            printarTabuleiro(jogo);
+
+            while(1){
+
+                opcaoMenuJogo = menuJogada(jogo);
+
+                switch (opcaoMenuJogo){
+                    case 1: //adicionar jogada
+                        adicionarJogada(jogo, mascara);
+                        printarTabuleiro(jogo);
+                    break;
+                    case 2: //remover jogada
+                        removerJogada(jogo, mascara);
+                        printarTabuleiro(jogo);
+                    break;
+                    case 3: //salvar
+                        salvarArquivo(jogo, mascara, jogoResolvido);
+                    break;
+                    default: //sair
+                        return 0;
+                    break;
+                }
+            }
+        break;
+
+        case 2: //Jogo novo
+
+            lerArquivo(table, jogo, jogoResolvido);
+            criarMascara(jogo, mascara);
+            printarTabuleiro(jogo);
+            
+            while(1){
+
+                opcaoMenuJogo = menuJogada(jogo);
+
+                switch (opcaoMenuJogo){
+                    case 1: //adicionar jogada
+                        adicionarJogada(jogo, mascara);
+                        printarTabuleiro(jogo);
+                    break;
+                    case 2: //remover jogada
+                        removerJogada(jogo, mascara);
+                        printarTabuleiro(jogo);
+                    break;
+                    case 3: //salvar
+                        salvarArquivo(jogo, mascara, jogoResolvido);
+                    break;
+                    default: //sair
+                        return 0;
+                    break;
+                }
+            }
+        break;
+
+        default:
+            return 0;
+        break;
+    }
+
+    fclose(table);
+    return 0;
+}
